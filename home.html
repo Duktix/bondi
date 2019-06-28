@@ -448,6 +448,152 @@ role="navigation" >
         </div>
     
     </div>
+
+<div class="is-section is-box is-bg-light is-dark-text is-section-60">
+
+        <div class="is-boxes">
+
+            <div class="is-box-centered">
+                <div class="is-container is-builder container-fluid" id="contentareaKDgIW56" style="margin-top: 20px; margin-bottom: 20px;"><div class="row"><div class="col-md-12">
+                    <h1 style="text-align: center;">Read Our Blog</h1>
+                    <p style="text-align: center;">New Stories</p><p style="text-align: center;"><br></p><p style="text-align: center;"><div class="widget blog_widget blog_widget_2">
+		<div id="blog_widget_2" class="blog-posts">
+			<div class="post-content" id="paginated-1"><div class="col-sm-4">
+	<div class="blog">
+		<a href="https://Frezit.github.io/bondi//blog/some-awesome-blog-title-here">
+		<div class="blog-image" style="background-image:url(https://Frezit.github.io/bondi//uploads/2019/06/post-thumb_343654731.png)"><div class="date">28/06/2019</div></div>
+		<h4>Some Awesome Blog Title Here</h4>
+		</a>
+	</div>
+</div><div class="col-sm-4">
+	<div class="blog">
+		<a href="https://Frezit.github.io/bondi//blog/some-awesome-blog-title-here-1">
+		<div class="blog-image" style="background-image:url(https://Frezit.github.io/bondi//uploads/2019/06/post-thumb_343654731.png)"><div class="date">28/06/2019</div></div>
+		<h4>Some Awesome Blog Title Here - Copy</h4>
+		</a>
+	</div>
+</div><div class="col-sm-4">
+	<div class="blog">
+		<a href="https://Frezit.github.io/bondi//blog/some-awesome-blog-title-here---copy2">
+		<div class="blog-image" style="background-image:url(https://Frezit.github.io/bondi//uploads/2019/06/post-thumb_343654731.png)"><div class="date">28/06/2019</div></div>
+		<h4>Some Awesome Blog Title Here - Copy2</h4>
+		</a>
+	</div>
+</div></div>
+		</div>
+	</div>
+<br></p>
+                </div><div class="col-md-12  text-center">
+						<a href="#" class="is-btn is-btn-ghost1 is-upper is-btn-small edit" title="">More Stories</a>
+					</div></div></div>
+            </div>
+
+        </div>
+    
+    </div>
+
+<div class="is-section is-box is-section-20" style="background-color: rgb(255, 196, 0);">
+
+        <div class="is-boxes">
+
+            <div class="is-box-centered">
+                <div class="is-container is-builder container-fluid" id="contentareaPqwQ1Vl" style="margin-top: 0px; margin-bottom: 0px;"><div class="row"><div class="col-md-12"><div style="text-align: center;"><span style="/* background-color: rgb(255, 255, 255); */"><div class="widget form_widget form_widget_3">
+		<!-- Hubspot -->
+				<!-- Hubspot -->
+		
+		<div class="alert alert-success collapse" id="form_3_success"></div>
+		<form id="form_3" method="post" 
+		
+				
+		>
+								  <div class="form-group col-sm-12 
+				  				  				  ">
+										<label for="field_901">Subscribe To Our Newsletter</label>
+															<input type="text" class="form-control placeholder" name='field_901' id="field_901" placeholder="Enter Email Address" value="">
+										<div class="help"></div>
+									  </div>
+								
+				
+				<!-- Hubspot -->
+								
+				<!-- Hubspot -->
+				<input type="hidden" class="form-control" name="logo" value="https://Frezit.github.io/bondi/https://Frezit.github.io/bondi//uploads/2019/06/bondi-logo_1437013894.png">
+				<input type="hidden" class="form-control" name="url" value="https://Frezit.github.io/bondi/">
+				<input type="hidden" class="form-control" name="newsletter" value="https://Frezit.github.io/bondi//newsletter/form_3_email">
+				<div class="form-group col-sm-12">
+				<button type="submit" class="btn btn-default ">Subscribe</button>
+				</div>
+		</form>
+	</div>
+<style>
+#form_3 .form-control{
+			background-color: rgba(255,255,255,1);
+				color: rgba(0,0,0,1);
+				border: 0;
+				border-color: rgba(255,255,255,1);
+				padding: 5px 10px;
+				font-size: 15px;
+		height: auto;
+}
+</style>
+<script>
+jQuery(document).ready(function(){
+	setInterval(function(){
+		jQuery('.checkboxgroup').each(function(){
+			var texts = '';
+			jQuery(this).find('input[type="checkbox"]').each(function(){
+				if(jQuery(this).is(':checked')){
+					texts = texts+jQuery(this).val()+', ';
+				}
+			})
+			jQuery(this).find('input[type="text"]').val(texts);
+		})
+	}, 100);
+	jQuery("#form_3").validate({
+		rules:{
+		  			"field_901": {
+							},
+		  		},
+		messages: {
+							"field_901": {
+									},
+					},
+		submitHandler: function(form) {
+			
+						
+							jQuery.ajax({
+						type: "POST",
+						url: "http://mx.frezit.com",
+						data: { data: jQuery('#form_3').serialize(), adminmail:'jbora201@gmail.com', recipients:'jbora201@gmail.com', from: 'jbora201@gmail.com', fromname: 'bondi', subject:'', replyto:'' },
+						dataType: "text",
+						success: function(resultData){
+							console.log(resultData);
+							if(resultData=='success'){
+																	jQuery('#form_3').find('button[type="submit"]').prop('disabled', true);
+									jQuery('#form_3_success').html('Please wait...');
+									jQuery('#form_3_success').addClass('in');
+									setTimeout(function(){ 
+										jQuery('#form_3_success').hide();
+										jQuery('#form_3_success').html('Thank you for your submission.');
+										jQuery('#form_3_success').fadeIn();
+										jQuery('#form_3').find('button[type="submit"]').prop('disabled', false);
+										jQuery('#form_3').trigger('reset');
+																			}, 1000);
+															}
+						}
+				});
+						
+			
+		}
+	});
+})
+</script>
+</span></div></div></div></div>
+            </div>
+
+        </div>
+    
+    </div>
 	</div>
 
 
@@ -466,7 +612,26 @@ role="navigation" >
 
 
 
-        <!-- Back to top -->    
+        <div class="is-section footer" id="row_26821" style="clear:both;background-color:#19283f;background-image:url();color:#a8b9c0"><div class="container"><div class="row customrow"><div class="customcol col-sm-3" id="col_243990"><div class="boxelement"><div class="element"><p><img src="https://Frezit.github.io/bondi//uploads/2019/06/bondi-logo_1437013894.png" alt="" width="87" height="44"></p>
+<p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+<p>Created by Graphberry,Belgrade,Serbia</p>
+<p>2017 - Bondi.Inc</p></div></div><div class="boxelement"><div class="element"></div></div></div><div class="customcol col-sm-3" id="col_662843"><div class="boxelement"><div class="element"><h3>Links</h3>
+<p><a href="#">Home</a></p>
+<p><a href="#">Our Services</a></p>
+<p><a href="#">Portfolio</a></p>
+<p><a href="#">Testimonials</a></p>
+<p><a href="#">Support</a></p>
+<p><a href="#">Terms &amp; Conditions</a></p></div></div></div><div class="customcol col-sm-3" id="col_470086"><div class="boxelement"><div class="element"><h3>About Us</h3>
+<p><a href="#">Sign In</a></p>
+<p><a href="#">Register</a></p>
+<p><a href="#">About Us</a></p>
+<p><a href="#">Blog</a></p>
+<p><a href="#">Contact Us</a></p></div></div></div><div class="customcol col-sm-3" id="col_562149"><div class="boxelement"><div class="element"><h3>Contact Us</h3>
+<p>Get in touch with us via mail phone.We are waiting for your call or message</p>
+<p><span class="email"><a href="mailto:example@mail.com">example@mail.com</a></span></p>
+<p><span class="email"><span class="fa fa-facebook-official">&nbsp;</span>&nbsp;<span class="fa fa-twitter">&nbsp;</span><span class="fa fa-google-plus">&nbsp;</span><span class="fa fa-dribbble">&nbsp;</span></span></p></div></div></div></div></div></div>
+
+<!-- Back to top -->    
 <a href="#" class="back-to-top" id="back-to-top"> <i class="fa fa-angle-up"></i> </a>
 
 <script>

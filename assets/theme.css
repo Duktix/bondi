@@ -21,7 +21,9 @@ body{
 
 
 	
-	
+	.is-section.footer {
+    padding: 50px 0;
+}
 
 	
 .navbar-custom{
