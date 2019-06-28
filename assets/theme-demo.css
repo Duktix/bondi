@@ -58,6 +58,22 @@ a:link, a:visited, a:hover, a:active {
 .is-section.footer {
     padding: 50px 0;
 }
+.display h1 {
+    font-weight: 300;
+    text-transform: capitalize;
+}
+a.bondi-btn {
+    background-color: #ff3150;
+    color: #ffc501 !important;
+    border: 1px solid #ff3150 !important;
+    border-radius: 70px;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    padding: 8px 60px;
+}
+a.bondi-btn:hover {
+    background-color: #111;
+}
 
 	
 .navbar-custom{
