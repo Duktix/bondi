@@ -72,7 +72,13 @@ a.bondi-btn {
     padding: 8px 60px;
 }
 a.bondi-btn:hover {
-    background-color: #111;
+    background-color: #111 !important;
+    border-color: #111 !important;
+}
+h2.title, .h2.title {
+	font-family: 'Roboto', sans-serif;
+    color: #1a2940 !important;
+    font-weight: 500 !important;
 }
 
 	
