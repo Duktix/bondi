@@ -21,7 +21,41 @@ body{
 
 
 	
-	.is-section.footer {
+	* {
+	font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Roboto', sans-serif;
+}
+body {
+	font-size: 17px;
+}
+h1, .h1 {
+	font-size: 42px;
+}
+h2, .h2 {
+	font-size: 36px;
+}
+h3, .h3 {
+	font-size: 30px;
+}
+h4, .h4 {
+	font-size: 28px;
+}
+h5, .h5 {
+	font-size: 24px;
+}
+h6, .h6 {
+	font-size: 22px;
+}
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+.nav>li a:hover
+{
+    color: #fff !important;
+}
+.is-section.footer {
     padding: 50px 0;
 }
 
