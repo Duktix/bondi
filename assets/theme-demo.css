@@ -37,7 +37,7 @@ h2, .h2 {
 	font-size: 36px;
 }
 h3, .h3 {
-	font-size: 30px;
+	font-size: 26px;
 }
 h4, .h4 {
 	font-size: 28px;
@@ -80,6 +80,121 @@ h2.title, .h2.title {
     color: #1a2940;
     font-weight: 500 !important;
     font-size: 36px !important;
+}
+.three-highlight h3 {
+    color: #ffc501;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+h5.subhead {
+    color: #a8b9c0;
+    position: relative;
+}
+.is-section.is-grey-text {
+    color: #a8b9c0;
+}
+h5.subhead:after {
+    content: "ddd";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    max-width: 22%;
+    color: transparent;
+    border-bottom: 1px solid #00c6bf;
+    margin: 0 auto;
+}
+.footer a {
+    color: #a8b9c0;
+}
+.footer span.fa {
+    background-color: #347cd2;
+    min-width: 38px;
+    text-align: center;
+    padding: 10px 0;
+    margin-right: 10px;
+    border-radius: 50%;
+    padding-left: 4px;
+    color: #fff;
+}
+.footer span.fa.fa-twitter {
+    background-color: #1ec4ff;
+}
+.footer span.fa.fa-google-plus {
+    background-color: #ff4032;
+}
+.footer span.fa.fa-dribbble {
+    background-color: #ff3298;
+}
+.widget.form_widget.form_widget_3 {
+    display: inline-block !important;
+}
+.form-group {
+    width: auto !important;
+}
+label {
+    display: inline-block !important;
+}
+input#field_901 {
+    width: auto !important;
+    display: inline-block;
+}
+.footer .boxelement h3 {
+    font-weight: 500;
+}
+span.email a {
+    color: #fff;
+}
+
+span.email {
+    background-color: #ff3150;
+    padding: 8px 0;
+    display: block;
+    text-align: center;
+    border: 1px solid #ff3150;
+    border-radius: 42px;
+}
+.is-section.newsletter label {
+    color: #000000;
+    padding-right: 18px;
+}
+.is-section.newsletter input[type=text] {
+    background: transparent !important;
+    border-bottom: 1px solid #fff !important;
+    box-shadow: none;
+    border-radius: 0;
+}
+.is-section.newsletter input[type=text]::placeholder {
+    color: #fff;
+}
+button[type=submit] {
+    background-color: #19283f;
+    color: #ffc501;
+    border-radius: 10px;
+    padding: 5px 42px;
+}
+.blog {
+    border: 0;
+}
+.blog .blog-image {
+    min-height: 100px;
+    position: relative;
+    margin-bottom: 45px;
+}
+.blog .blog-image .date {
+    background: transparent;
+    position: absolute;
+    bottom: -45px;
+    color: #a8b9c0;
+    font-weight: normal;
+}
+.blog h4 {
+    font-size: 18px;
+    font-weight: 500;
+}
+.is-section.the-team h2 {
+    color: #ffc501;
 }
 
 	
