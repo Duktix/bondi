@@ -89,6 +89,7 @@ h2.title, .h2.title {
 h5.subhead {
     color: #a8b9c0;
     position: relative;
+    text-transform: uppercase;
 }
 .is-section.is-grey-text {
     color: #a8b9c0;
