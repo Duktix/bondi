@@ -31,19 +31,20 @@ body {
 	font-size: 17px;
 }
 h1, .h1 {
-	font-size: 42px;
+	font-size: 48px;
 }
 h2, .h2 {
 	font-size: 36px;
 }
 h3, .h3 {
-	font-size: 26px;
+	font-size: 24px;
 }
 h4, .h4 {
 	font-size: 28px;
 }
 h5, .h5 {
-	font-size: 20px;
+    font-size: 17px;
+    font-weight: 400;
 }
 h6, .h6 {
 	font-size: 18px;
@@ -67,9 +68,9 @@ a.bondi-btn {
     color: #ffc501 !important;
     border: 1px solid #ff3150 !important;
     border-radius: 70px;
-    text-transform: capitalize;
     letter-spacing: 0;
     padding: 8px 60px;
+    font-weight: 500;
 }
 a.bondi-btn:hover {
     background-color: #111 !important;
@@ -79,7 +80,7 @@ h2.title, .h2.title {
 	font-family: 'Roboto', sans-serif;
     color: #1a2940;
     font-weight: 500 !important;
-    font-size: 36px !important;
+    font-size: 40px !important;
 }
 .three-highlight h3 {
     color: #ffc501;
@@ -90,6 +91,7 @@ h5.subhead {
     color: #a8b9c0;
     position: relative;
     text-transform: uppercase;
+    margin-bottom: 35px;
 }
 .is-section.is-grey-text {
     color: #a8b9c0;
@@ -103,8 +105,9 @@ h5.subhead:after {
     right: 0;
     max-width: 22%;
     color: transparent;
-    border-bottom: 1px solid #00c6bf;
+    border-bottom: 2px solid #00c6bf;
     margin: 0 auto;
+    opacity: 0.5;
 }
 .footer a {
     color: #a8b9c0;
@@ -196,6 +199,72 @@ button[type=submit] {
 }
 .is-section.the-team h2 {
     color: #ffc501;
+}
+.grid figure:hover:before {
+    content: "fff";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #33d1cc;
+    color: transparent;
+    z-index: 1;
+}
+.footer span.credit {
+    color: #ffc501;
+}
+.grid figure:hover figcaption.title_on_hover {
+    opacity: 1;
+    z-index: 99;
+    text-align: center;
+}
+.grid figure:hover figcaption.title_on_hover h2 {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.grid figure:hover figcaption>a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 18px;
+    opacity: 1;
+    text-align: center;
+    color: black;
+}
+.is-card .member-info {
+    position: relative;
+}
+.is-card .member-info h3 {
+    letter-spacing: 1px;
+    background-color: #33d1cc;
+    padding: 8px 0;
+    text-transform: capitalize !important;
+}
+.is-card .member-info p {
+    position: relative;
+    color: #33D1CC;
+    padding: 20px;
+}
+.navbar-custom .navbar-nav li a {
+    background-color: rgba(255,255,255,0);
+    color: #a8b9c0;
+    font-weight: 400;
+}
+.isotope-filter {
+    text-align: center;
+}
+.isotope-filter li a {
+    padding: 10px 15px;
+    background: transparent;
+    color: #a8b9c0;
+    font-weight: 500;
+}
+ul.isotope-filter li a.is-active {
+    background: #ff3150;
+    color: #ffbb06;
+    border-radius: 10px;
 }
 
 	
