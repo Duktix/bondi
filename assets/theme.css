@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: 'Roboto', sans-serif;
 }
 body {
-	font-size: 17px;
+	font-size: 15px;
 }
 h1, .h1 {
 	font-size: 48px;
@@ -114,7 +114,7 @@ h5.subhead:after {
 }
 .footer span.fa {
     background-color: #347cd2;
-    min-width: 38px;
+    min-width: 34px;
     text-align: center;
     padding: 10px 0;
     margin-right: 10px;
@@ -162,6 +162,7 @@ span.email {
 .is-section.newsletter label {
     color: #000000;
     padding-right: 18px;
+    font-size: 17px;
 }
 .is-section.newsletter input[type=text] {
     background: transparent !important;
@@ -262,6 +263,22 @@ button[type=submit] {
     font-weight: 500;
 }
 ul.isotope-filter li a.is-active {
+    background: #ff3150;
+    color: #ffbb06;
+    border-radius: 10px;
+}
+.footer {
+    font-size: 80%;
+}
+
+.footer h3 {
+    color: #f0f8fb;
+    font-weight: 400 !important;
+}
+.grid figure:hover:before {
+    content: none !important;
+}
+ul.isotope-filter li a:hover {
     background: #ff3150;
     color: #ffbb06;
     border-radius: 10px;
