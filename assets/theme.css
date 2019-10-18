@@ -51,7 +51,10 @@ body{
 
 
 	
-	a:link, a:visited, a:hover, a:active {
+	body {
+    line-height: 1.6;
+}
+a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
 
@@ -62,7 +65,12 @@ body{
     font-weight: 300;
     text-transform: capitalize;
 }
-
+h4 {
+    font-weight: normal;
+}
+b, strong {
+  font-weight: 500;
+}
 h2.title, .h2.title {
 	font-family: 'Roboto', sans-serif;
     color: #1a2940;
